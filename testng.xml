@@ -1,0 +1,9 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+  
+<suite name="Cucumber Framework" verbose="1" >
+  <test name="Cucumber Tests" junit="true" >
+    <classes>
+       <class name="com.runner.MainRunner" />
+    </classes>
+  </test>
+</suite>
