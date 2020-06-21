@@ -14,3 +14,4 @@ Run from <b>MainTestRunner.java</b> class or from <b>testng.xml</b> file <br>
 2. Extent Reporting.<br>
 3. Cucumber latest jars (v6)<br>
 4. Extent Reports (v4)<br>
+5. Screenshots logging for cucumber reports <br>
