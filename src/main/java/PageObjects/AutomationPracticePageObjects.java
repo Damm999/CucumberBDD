@@ -8,7 +8,7 @@ import helper.SeleniumHelper;
 
 public class AutomationPracticePageObjects extends SeleniumHelper {
 
-	public @FindBy(css = ".login")
+	public @FindBy(css = ".lo;gin")
 	WebElement signInLink;
 	
 	public @FindBy(id="email_create")

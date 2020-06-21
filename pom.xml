@@ -33,94 +33,93 @@
 			<version>3.141.59</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-junit -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-junit</artifactId>
-			<version>1.2.5</version>
+			<version>6.1.1</version>
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-java -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-java</artifactId>
-			<version>1.2.5</version>
+			<version>6.1.1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-core -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-core -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-core</artifactId>
-			<version>1.2.5</version>
+			<version>6.1.1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-jvm</artifactId>
-			<version>1.2.5</version>
+			<version>6.1.1</version>
 			<type>pom</type>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/gherkin -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-gherkin -->
 		<dependency>
-			<groupId>info.cukes</groupId>
-			<artifactId>gherkin</artifactId>
-			<version>2.12.2</version>
-			<scope>provided</scope>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-gherkin</artifactId>
+			<version>6.1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-plugin -->
+		<dependency>
+			<groupId>io.cucumber</groupId>
+			<artifactId>cucumber-plugin</artifactId>
+			<version>6.1.1</version>
 		</dependency>
 
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-jvm-deps -->
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-jvm-deps -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-jvm-deps</artifactId>
-			<version>1.0.5</version>
+			<version>1.0.6</version>
 			<scope>provided</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-picocontainer -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-picocontainer -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-picocontainer</artifactId>
-			<version>1.2.5</version>
+			<version>6.1.1</version>
+			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-html -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-html -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-html</artifactId>
-			<version>0.2.6</version>
+			<version>0.2.7</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/info.cukes/cucumber-testng -->
+
+		<!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-testng -->
 		<dependency>
-			<groupId>info.cukes</groupId>
+			<groupId>io.cucumber</groupId>
 			<artifactId>cucumber-testng</artifactId>
-			<version>1.2.5</version>
+			<version>6.1.1</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+
 		<dependency>
-			<groupId>com.aventstack</groupId>
-			<artifactId>extentreports</artifactId>
-			<version>3.1.1</version>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber6-adapter</artifactId>
+			<version>1.0.0</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.freemarker/freemarker -->
-		<dependency>
-			<groupId>org.freemarker</groupId>
-			<artifactId>freemarker</artifactId>
-			<version>2.3.26-incubating</version>
-		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/com.vimalselvam/cucumber-extentsreport -->
-		<dependency>
-			<groupId>com.vimalselvam</groupId>
-			<artifactId>cucumber-extentsreport</artifactId>
-			<version>3.0.2</version>
-		</dependency>
 
 
 		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->

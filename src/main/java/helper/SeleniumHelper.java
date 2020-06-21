@@ -23,8 +23,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
-import com.cucumber.listener.Reporter;
-
+import io.cucumber.java.Scenario;
 import utils.DriverFactory;
 
 public class SeleniumHelper extends DriverFactory {
@@ -387,7 +386,9 @@ public class SeleniumHelper extends DriverFactory {
 
 	// ........................... Extent Report......................
 
-	public static String returnDateStamp(String fileExtension) {
+	// .................Using infocakes with vimal...........................
+	
+	/*public static String returnDateStamp(String fileExtension) {
 		Date date = new Date();
 		Timestamp ts = new Timestamp(date.getTime());
 		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd-HH_mm_ss");
@@ -407,17 +408,17 @@ public class SeleniumHelper extends DriverFactory {
 		Reporter.addStepLog("<a target=\"_blank\" href=" + returnScreenShotName() + "><img src="
 				+ returnScreenShotName() + "  height=200 width=300 /></a>");
 	}
-
-	private static String returnScreenShotName() {
+*/
+	/*private static String returnScreenShotName() {
 		return System.getProperty("user.dir") + "\\output\\images\\" + screenshotName;
-	}
+	}*/
 
 	/**
 	 * @param src
 	 * @param des
 	 * @throws IOException
 	 */
-	private static void copyFileUSingStream(File src, File des) throws IOException {
+	/*private static void copyFileUSingStream(File src, File des) throws IOException {
 		InputStream input = null;
 		OutputStream output = null;
 
@@ -446,5 +447,16 @@ public class SeleniumHelper extends DriverFactory {
 		System.out.println(src.getAbsolutePath());
 		File des = new File("./output/" + date + ".html");
 		copyFileUSingStream(src, des);
+	}*/
+	
+	
+	
+	// ............Using cucumber.io along with cucumber-extent-report-adapter//
+	
+	public static void captureScreenshot(Scenario sc) throws IOException {
+		String methodStatus = sc.isFailed()?"Failed":"Passed";
+		byte[] imageBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+		sc.attach(imageBytes, "image/png", methodStatus);
+
 	}
 }

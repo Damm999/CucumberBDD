@@ -4,15 +4,16 @@ import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
 
+
 import PageObjects.AA_HomePageObjects;
 import PageObjects.AA_SearchResultsPage;
 import PageObjects.AP_RegistrationPage;
 import PageObjects.AutomationPracticePageObjects;
 import PageObjects.NewToursPageObjects;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import helper.SeleniumHelper;
+import io.cucumber.java.After;
+import io.cucumber.java.Before;
+import io.cucumber.java.Scenario;
 import utils.DriverFactory;
 
 public class MasterHooks extends DriverFactory {
@@ -48,8 +49,8 @@ public class MasterHooks extends DriverFactory {
 		try {
 			if (driver != null) {
 				if (scenario.isFailed()) {
-					scenario.embed(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png");
-					SeleniumHelper.captureScreenshot();
+				//	scenario.attach(((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES), "image/png","Failed Screenshot");
+					SeleniumHelper.captureScreenshot(scenario);
 				}
 
 				driver.manage().deleteAllCookies();

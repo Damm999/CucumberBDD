@@ -3,7 +3,7 @@
 <suite name="Cucumber Framework" verbose="1" >
   <test name="Cucumber Tests" junit="true" >
     <classes>
-       <class name="com.runner.MainRunner" />
+       <class name="com.runner.MainTestRunner" />
     </classes>
   </test>
 </suite>
