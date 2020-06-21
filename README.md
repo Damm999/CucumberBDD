@@ -2,9 +2,9 @@
 
 This Framework contains cucumber.io and cucumber info cakes <br>
 
-Execution:<br>
-Jnuit: <br>
+<b>Execution:</b><br>
+<b>Jnuit:</b> <br>
 Run from <b>MainRunner.java</b> file <br>
 <br>
-TestNG: <br>
-Run from MainTestRunner.java class or from testng.xml file <br>
+<b>TestNG:</b> <br>
+Run from <b>MainTestRunner.java</b> class or from <b>testng.xml</b> file <br>
