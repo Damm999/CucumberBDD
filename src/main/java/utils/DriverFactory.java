@@ -14,6 +14,7 @@ import PageObjects.AA_SearchResultsPage;
 import PageObjects.AP_RegistrationPage;
 import PageObjects.AutomationPracticePageObjects;
 import PageObjects.NewToursPageObjects;
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class DriverFactory {
 	
@@ -30,16 +31,17 @@ public class DriverFactory {
 		ReadConfigFile file = new ReadConfigFile();
 		
 		String browserName = file.getBrowser();
-		System.out.println("-=-=-=-=-=-==--=-=-: "+browserName);
-		System.out.println("driver-=-=-=-=-=-==--=-=-: "+driver);		
+		System.out.println("-=-=-=-=-=-==--=-=-: "+browserName);		
 		switch (browserName) {
 
 		case "chrome":
-			System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, BrowserConstants.Chrome_Driver_Path);
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty(ChromeDriverService.CHROME_DRIVER_EXE_PROPERTY, BrowserConstants.Chrome_Driver_Path);
 			driver = new ChromeDriver();
 			break;
 		case "firefox":
-			System.setProperty("webdriver.gecko.driver", BrowserConstants.FireFox_Driver_Path);
+			WebDriverManager.firefoxdriver().setup();
+			//System.setProperty("webdriver.gecko.driver", BrowserConstants.FireFox_Driver_Path);
 			driver = new FirefoxDriver();
 			break;
 
@@ -47,7 +49,7 @@ public class DriverFactory {
 		}catch (Exception e) {
 			System.out.println("Unable to lauch browser due to: "+e.toString());
 		}
-		
+		System.out.println("driver-=-=-=-=-=-==--=-=-: "+driver);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		driver.manage().window().maximize();
 		
