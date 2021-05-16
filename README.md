@@ -1,8 +1,8 @@
+[![Cucumber CI](https://github.com/Damm999/CucumberBDD/actions/workflows/CI.yml/badge.svg)](https://github.com/Damm999/CucumberBDD/actions/workflows/CI.yml)
+
 # CucumberBDD
 > * This Framework contains cucumber.io and cucumber info cakes pom.xml file.
 > * Any JDK or JVm related check under pom.xml or build path to match the system required paths
-
-[![Cucumber CI](https://github.com/Damm999/CucumberBDD/actions/workflows/CI.yml/badge.svg)](https://github.com/Damm999/CucumberBDD/actions/workflows/CI.yml)
 
 
 ## Execution: 
