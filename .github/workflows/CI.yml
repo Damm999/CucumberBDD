@@ -1,6 +1,4 @@
-# This workflow will build a Java project with Maven
-# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
-
+# This workflow will build a Cucumber Java project with Maven
 name: Cucumber CI
 
 on:
@@ -27,6 +25,13 @@ jobs:
       run: mvn clean compile test
       
     - uses: actions/upload-artifact@v2
+      continue-on-error: true
       with:
         name: results
         path: test-output/**
+
+    - uses: actions/upload-artifact@v2
+      continue-on-error: true
+      with:
+        name: target
+        path: target/**
