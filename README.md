@@ -1,5 +1,7 @@
 # CucumberBDD
 
+[![Cucumber CI](https://github.com/Damm999/CucumberBDD/actions/workflows/CI.yml/badge.svg)](https://github.com/Damm999/CucumberBDD/actions/workflows/CI.yml)
+
 This Framework contains cucumber.io and cucumber info cakes <br>
 
 <b>Execution:</b><br>
