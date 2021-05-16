@@ -35,7 +35,7 @@ public class NewToursPageObjects extends SeleniumHelper {
 
 	public @FindBy(name = "confirmPassword") WebElement conformPassTextBox;
 
-	public @FindBy(name = "register") WebElement submitButton;
+	public @FindBy(name = "submit") WebElement submitButton;
 	
 	public @FindBy(xpath = "(//font)[5]") WebElement thankYouLabel;
 	
