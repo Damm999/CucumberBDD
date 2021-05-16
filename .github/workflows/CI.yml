@@ -8,6 +8,8 @@ on:
     branches: [ master ]
   pull_request:
     branches: [ master ]
+  schedule:
+    - cron: 1 4,18 15 JAN-DEC *
 
 jobs:
   build:
