@@ -12,7 +12,7 @@ import io.cucumber.junit.CucumberOptions;
 @CucumberOptions(features = { "src/test/java/featureFiles/" },
 		glue = {"stepDefinitions" },
 		monochrome = true, 
-		/* tags = "@automationPractice", */
+				 tags = "@automationPractice or @travel", 
 		plugin = { "pretty",
 				"html:test-output/Junit-Cucumber/cucumber.html",
 				"json:test-output/Junit-Cucumber/cucumber.json",

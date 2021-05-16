@@ -6,7 +6,7 @@ import io.cucumber.testng.CucumberOptions;
 @CucumberOptions(features = { "src/test/java/featureFiles/" },
 glue = {"stepDefinitions" },
 monochrome = true, 
-		/* tags = "@automationPractice", */
+		 tags = "@automationPractice or @travel", 
 plugin = { "pretty",
 		"html:test-output/TestNG-Cucumber/cucumber.html",
 		"json:test-output/TestNG-Cucumber/cucumber.json",

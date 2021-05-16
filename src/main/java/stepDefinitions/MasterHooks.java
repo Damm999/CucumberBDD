@@ -29,7 +29,7 @@ public class MasterHooks extends DriverFactory {
 		driver = getWebdriver();
 		wait = waitDriver();
 		newToursPage = PageFactory.initElements(driver, NewToursPageObjects.class);
-		driver.get("http://newtours.demoaut.com/");
+		driver.get("http://demo.guru99.com/test/newtours/");
 	}
 	
 	@Before("@automationPractice")
