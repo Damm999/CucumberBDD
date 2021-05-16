@@ -1,9 +1,6 @@
 package stepDefinitions;
 
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.PageFactory;
-
 
 import PageObjects.AA_HomePageObjects;
 import PageObjects.AA_SearchResultsPage;

@@ -6,14 +6,22 @@
 
 
 ## Execution: 
-###### Junit:
+**Junit**:
 * Run from `MainRunner.java` file
 
-###### TestNG:
+**TestNG**:
 * Run from `MainTestRunner.java class` or from `testng.xml` file.
 
-###### Using Maven:
-* `mvn clean compile test`
+**Using Maven**:
+* Either Configure mvn build in eclipse with:
+  * `clean compile test`
+* Or Run form command prompt:
+  * `mvn clean compile test`
+
+
+## Further Documentation help:
+* [ExtentReport-Plugin](https://github.com/grasshopper7/extentreports-cucumber6-adapter) for further queries on configuration.
+* [ExtentReport- Older plugins](https://www.extentreports.com/docs/versions/5/java/plugins.html) for different versions of plugin's.
 
 ## Features:
 * Cucumber reporting.

@@ -1,17 +1,7 @@
 package helper;
 
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.sql.Timestamp;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -28,7 +18,7 @@ import utils.DriverFactory;
 
 public class SeleniumHelper extends DriverFactory {
 
-	private static String screenshotName;
+	//private static String screenshotName;
 
 	/**
 	 * @param element
