@@ -27,5 +27,5 @@
 * Cucumber reporting.
 * Extent Reporting.
 * Cucumber latest jars (v6)
-* Extent Reports (v4)
+* Extent Reports (v5)
 * Screenshots logging for cucumber reports 
