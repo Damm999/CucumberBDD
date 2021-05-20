@@ -25,12 +25,14 @@ jobs:
       run: mvn clean compile test
       
     - uses: actions/upload-artifact@v2
+      if: always()
       continue-on-error: true
       with:
         name: results
         path: test-output/**
 
     - uses: actions/upload-artifact@v2
+      if: always()
       continue-on-error: true
       with:
         name: target
