@@ -5,6 +5,7 @@ import io.cucumber.testng.CucumberOptions;
 
 @CucumberOptions(features = { "src/test/java/featureFiles/" },
 glue = {"stepDefinitions" },
+		publish = true,
 monochrome = true, 
 		 tags = "@automationPractice or @travel", 
 plugin = { "pretty",

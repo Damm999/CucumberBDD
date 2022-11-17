@@ -1,5 +1,6 @@
 package utils;
 
+import java.time.Duration;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
@@ -57,7 +58,7 @@ public class DriverFactory {
 	}
 	
 	public WebDriverWait waitDriver() {
-		return new WebDriverWait(driver, 30);
+		return new WebDriverWait(driver, Duration.ZERO.withSeconds(30));
 	}
 
 }

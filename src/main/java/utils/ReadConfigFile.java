@@ -3,6 +3,8 @@ package utils;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Properties;
 
 import Constants.GlobalConstants;
@@ -14,8 +16,7 @@ public class ReadConfigFile {
 	
 	public ReadConfigFile() {
 		try {
-			//input = ReadConfigFile.class.getClassLoader().getResourceAsStream(GlobalConstants.Config_Properties_Loc);
-			input = new FileInputStream(GlobalConstants.Config_Properties_Loc);
+			input = Files.newInputStream(Paths.get(GlobalConstants.Config_Properties_Loc));
 			prop = new Properties();
 			prop.load(input);
 			

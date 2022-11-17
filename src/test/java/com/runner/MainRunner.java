@@ -11,7 +11,8 @@ import io.cucumber.junit.CucumberOptions;
 @RunWith(Cucumber.class)
 @CucumberOptions(features = { "src/test/java/featureFiles/" },
 		glue = {"stepDefinitions" },
-		monochrome = true, 
+		monochrome = true,
+		publish = true,
 				 tags = "@automationPractice or @travel", 
 		plugin = { "pretty",
 				"html:test-output/Junit-Cucumber/cucumber.html",
